@@ -1,84 +1,165 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Ivan Fomin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        
+        /* Общие стили для тела страницы */
         body {
-            font-family: Arial, sans-serif;
-            font-style: #fff05f;
+            font-family: 'Roboto', Arial, sans-serif; /* Используем более современный шрифт Roboto, с Arial как запасным */
             margin: 0;
             padding: 20px;
-            background-color: #000000;
+            background-color: #f4f7f6; /* Светло-серый фон для всей страницы */
+            color: #333; /* Темно-серый цвет текста для хорошей читабельности */
+            line-height: 1.6; /* Улучшаем интерлиньяж для лучшей читабельности */
         }
-        h1 {
+
+        /* Стили для контейнера, чтобы контент не был слишком широким */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Стили для шапки */
+        header {
+            background-color: #fff; /* Белый фон шапки */
+            color: #2c3e50; /* Темно-синий цвет для текста шапки */
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Легкая тень */
+            border-radius: 8px; /* Скругленные углы */
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.8em; /* Увеличенный размер заголовка */
             margin: 0;
+            font-weight: 700; /* Более жирный шрифт для заголовка */
         }
+
+        header p {
+            font-size: 1.1em;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Стили для секций */
         section {
-            background: #000000;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border: 6px solid #ff0000;
+            background: #fff; /* Белый фон для каждой секции */
+            padding: 25px 30px;
+            margin-bottom: 20px; /* Отступ между секциями */
+            border-radius: 8px; /* Скругленные углы */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Легкая тень для каждой секции */
+            border: 1px solid #eee; /* Очень тонкая светло-серая рамка */
         }
-        h2 {
-            color: #007BFF;
+
+        section h2 {
+            color: #3498db; /* Ярко-голубой цвет для заголовков секций */
+            text-align: center; /* Центрирование заголовков секций */
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            font-weight: 500;
         }
+
+        /* Стили для параграфов и элементов списка внутри секций */
+        section p, section li {
+            text-align: center; /* Центрирование всего содержимого внутри секций */
+            color: #555; /* Более мягкий цвет текста */
+            font-size: 1.05em;
+        }
+
+        section ul {
+            list-style: none; /* Убираем стандартные маркеры списка */
+            padding: 0;
+            margin: 0;
+        }
+
+        section ul li {
+            margin-bottom: 10px; /* Отступ между элементами списка */
+        }
+
+        /* Стили для ссылок */
+        a {
+            color: #3498db; /* Цвет ссылок такой же, как у заголовков секций */
+            text-decoration: none; /* Убираем подчеркивание ссылок */
+            transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+        }
+
+        a:hover {
+            color: #2980b9; /* Цвет ссылок при наведении */
+            text-decoration: underline; /* Показываем подчеркивание при наведении */
+        }
+
+        /* Стили для футера */
         footer {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 40px;
             font-size: 0.9em;
-            color: #888;
-        }
-        a {
-            color: #007BFF;
+            color: #777; /* Серый цвет для текста футера */
+            padding: 20px 0;
         }
     </style>
 </head>
 <body>
 
-<header style="background: linear-gradient(to right, #000000, #000000); color: #fff; padding: 20px 0; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 5px;">
-    <h1 style="font-size: 2.5em; margin: 0;">Фомин Иван Алексеевич (13.12.2005)</h1>
-</header>
+<div class="container">
+    <header>
+        <h1>Ivan Fomin</h1>
+    </header>
 
-<section>
-    <h2><center>Образование</center></h2>
-    <p><center><font color="#ffffff">Среднее общее: Гатчинский лицей №3</font></center></p>
-    <p><center><font color="#ffffff">Высшее: ВШЭ, ПАДИИ (на данный момент)</font></center></p>
-</section>
+    <section>
+        <h2>Education</h2>
+        <p>Secondary Education: Gatchina Lyceum №3</p>
+        <p>Higher Education: HSE, ADA&AI (currently enrolled)</p>
+    </section>
 
-<section>
-    <h2><center>Навыки</center></h2>
-    <p><center><font color="#ffffff">Языки программирования: Python, C++</font></center></p>
-    <p><center><font color="#ffffff">Призванный мотиватор</font></center></p>
-</section>
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, C++</li>
+            <li>Real languages: Russian, English</li>
+            <li>Sport: First class in swimming, can do 25 clean pull-ups</li>
+        </ul>
+    </section>
 
-<section>
-    <h2><center>Проекты</center></h2>
-    <p><center><font color="#ffffff">Приложение со всеми спортивными разрядами оффлайн</font></center></p>
-    <p><center><font color="#ffffff">Личный сайт</font></center></p>
-</section>
+    <section>
+        <h2>Working experience</h2>
+        <ul>
+            <li>Not yet</li>
+        </ul>
+    </section>
 
-<section>
-    <h2><center>Команда</center></h2>
-    <p><center><font color="#ffffff"><span>❤️</span>Soleman Group<span>❤️</span></font></center></p>
-</section>
+    <section>
+        <h2>Projects</h2>
+        <ul>
+            <li>Offline Sports Achievements Application</li>
+            <li>MxNxKxD game with field research</li>
+            <li>Personal Website</li>
+        </ul>
+    </section>
 
-<section>
-    <h2><center>Контакты</center></h2>
-    <ul>
-        <li><center><font color="#ffffff">Telegram: </font><a href="https://t.me/gospodin_131" target="_blank">t.me/gospodin_131</a></center></li>
-        <li><center><font color="#ffffff">Email: </font><a href="ivan13shmel@gmail.com">ivan13shmel@gmail.com</a></center></li>
-        <li><center><font color="#ffffff">GitHub: </font><a href="https://github.com/Shmel131" target="_blank">github.com/Shmel131</a></center></li>
-    </ul>
-</section>
+    <section>
+        <h2>Team</h2>
+        <p><span>❤️</span> Soleman Group <span>❤️</span></p>
+    </section>
 
-<footer>
-    <p>&copy; 2025 Ivan Fomin</p>
-</footer>
+    <section>
+        <h2>Contact Information</h2>
+        <ul>
+            <li>Telegram: <a href="https://t.me/gospodin_131" target="_blank">t.me/gospodin_131</a></li>
+            <li>Email: <a href="mailto:ivan13shmel@gmail.com">ivan13shmel@gmail.com</a></li>
+            <li>GitHub: <a href="https://github.com/Shmel131" target="_blank">github.com/Shmel131</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ivan Fomin</p>
+    </footer>
+</div>
 
 </body>
 </html>
